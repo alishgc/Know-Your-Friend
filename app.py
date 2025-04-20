@@ -46,7 +46,6 @@ def index():
     return redirect(url_for('create_quiz'))
 
 @app.route('/create', methods=['GET', 'POST'])
-@login_required
 def create_quiz():
     if request.method == 'POST':
         quiz = Quiz()
