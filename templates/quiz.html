@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Question {{ question_index + 1 }} of {{ total_questions }}</h2>
+        <form method="POST">
+            <div class="question">
+                <p>{{ question.text }}</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q_answer" value="A"> 
+                        <span>{{ question.option_a }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_answer" value="B"> 
+                        <span>{{ question.option_b }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_answer" value="C"> 
+                        <span>{{ question.option_c }}</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q_answer" value="D"> 
+                        <span>{{ question.option_d }}</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Next</button>
+        </form>
+    </div>
+</body>
+</html>

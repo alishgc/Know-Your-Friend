@@ -1,0 +1,202 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all content */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Input Styles */
+input[type="text"], select, .form-check-input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Form Layout */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Form Check (for options) */
+.form-check-label {
+    margin-left: 10px;
+}
+
+.form-check {
+    margin-bottom: 1rem;
+}
+
+/* Quiz Page Styling */
+.quiz-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container label {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.quiz-container .form-check {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+/* Result Page Styling */
+.result-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h1 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.result-container p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.result-container a {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.result-container a:hover {
+    background-color: #45a049;
+}
+
+/* Share Page Styling */
+.share-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.share-container a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.share-container a:hover {
+    color: #45a049;
+}
+
+/* ------------ Responsive Styling ------------ */
+
+@media (max-width: 768px) {
+    .container,
+    .quiz-container,
+    .result-container,
+    .share-container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .quiz-container label,
+    .result-container p,
+    .share-container a {
+        font-size: 1.1rem;
+    }
+
+    button,
+    .result-container a {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .quiz-container,
+    .result-container,
+    .share-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .quiz-container label,
+    .result-container p,
+    .share-container a {
+        font-size: 1rem;
+    }
+
+    button,
+    .result-container a {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+    input[type="text"], select, .form-check-input {
+        padding: 0.8rem;
+    }
+}

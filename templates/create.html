@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script>
+        function addQuestion() {
+            const questionsContainer = document.getElementById('questions-container');
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question-form');
+            questionDiv.innerHTML = `
+                <label for="q_text">Question:</label>
+                <input type="text" name="q_text[]" required>
+
+                <label for="q_a">Option A:</label>
+                <input type="text" name="q_a[]" required>
+
+                <label for="q_b">Option B:</label>
+                <input type="text" name="q_b[]" required>
+
+                <label for="q_c">Option C:</label>
+                <input type="text" name="q_c[]" required>
+
+                <label for="q_d">Option D:</label>
+                <input type="text" name="q_d[]" required>
+
+                <label for="q_correct">Correct Answer:</label>
+                <select name="q_correct[]">
+                    <option value="A">Option A</option>
+                    <option value="B">Option B</option>
+                    <option value="C">Option C</option>
+                    <option value="D">Option D</option>
+                </select>
+                <hr>
+            `;
+            questionsContainer.appendChild(questionDiv);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Quiz</h1>
+        <form method="POST">
+            <div id="questions-container">
+                <!-- Dynamic question forms will appear here -->
+                <div class="question-form">
+                    <label for="q_text">Question:</label>
+                    <input type="text" name="q_text[]" required>
+
+                    <label for="q_a">Option A:</label>
+                    <input type="text" name="q_a[]" required>
+
+                    <label for="q_b">Option B:</label>
+                    <input type="text" name="q_b[]" required>
+
+                    <label for="q_c">Option C:</label>
+                    <input type="text" name="q_c[]" required>
+
+                    <label for="q_d">Option D:</label>
+                    <input type="text" name="q_d[]" required>
+
+                    <label for="q_correct">Correct Answer:</label>
+                    <select name="q_correct[]">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <button type="button" onclick="addQuestion()">Add Another Question</button> 
+            <p></p>
+          <button type="submit">Create Quiz</button>
+        </form>
+    </div>
+</body>
+</html>

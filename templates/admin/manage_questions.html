@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="{{ url_for('admin') }}">Dashboard</a>
+        <a href="{{ url_for('manage_quizzes') }}">Manage Quizzes</a>
+        <a href="{{ url_for('manage_questions') }}">Manage Questions</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Manage Questions for Quiz: {{ quiz.id }}</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for question in quiz.questions %}
+                    <tr>
+                        <td>{{ question.text }}</td>
+                        <td>
+                            <a href="{{ url_for('edit_question', quiz_id=quiz.id, question_id=question.id) }}">Edit</a>
+                            <form action="{{ url_for('delete_question', quiz_id=quiz.id, question_id=question.id) }}" method="POST" style="display:inline;">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

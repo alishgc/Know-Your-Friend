@@ -1,0 +1,217 @@
+/* ---------- Base & General Styles ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+}
+
+/* Container */
+.container,
+.quiz-container,
+.result-container,
+.share-container,
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Typography */
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"],
+select,
+.form-check-input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.form-check {
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+/* ---------- Buttons ---------- */
+
+button,
+.result-container a,
+.share-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover,
+.result-container a:hover,
+.share-button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Share Button Specific */
+.share-button {
+    background-color: #3498db;
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+}
+
+.share-button:hover {
+    background-color: #2980b9;
+}
+
+/* ---------- Result Styles ---------- */
+
+.result-message {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.result-score {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Share Page */
+.share-container a {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.share-container a:hover {
+    color: #45a049;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 768px) {
+    .container,
+    .quiz-container,
+    .result-container,
+    .share-container,
+    form {
+        padding: 1.5rem;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p,
+    label {
+        font-size: 1rem;
+    }
+
+    button,
+    .result-container a,
+    .share-button {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .result-message {
+        font-size: 1.25rem;
+    }
+
+    .result-score {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .container,
+    .quiz-container,
+    .result-container,
+    .share-container,
+    form {
+        padding: 1rem;
+    }
+
+    p,
+    label {
+        font-size: 0.95rem;
+    }
+
+    button,
+    .result-container a,
+    .share-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .result-message {
+        font-size: 1rem;
+    }
+
+    .result-score {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    select,
+    .form-check-input {
+        padding: 0.8rem;
+    }
+}

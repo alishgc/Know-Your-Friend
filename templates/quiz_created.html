@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Created</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz_created.css') }}">
+</head>
+<body>
+    <h1>Your Quiz has been Created!</h1>
+    <p>You can share this quiz with others using the link below:</p>
+    <a href="{{ url_for('take_quiz', quiz_id=quiz_id, _external=True) }}" class="share-button" target="_blank">Share This Quiz</a>
+</body>
+</html>
