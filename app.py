@@ -43,7 +43,7 @@ class Question(db.Model):
 # Routes
 @app.route('/')
 def index():
-    return redirect(url_for('create_quiz'))
+    return render_template('index.html')
 
 @app.route('/create', methods=['GET', 'POST'])
 def create_quiz():
@@ -239,7 +239,6 @@ def delete_question(quiz_id, question_id):
     db.session.commit()
     flash('Question deleted successfully!', 'success')
     return redirect(url_for('view_quiz', quiz_id=quiz_id))
-
 
 
 # Helper functions
