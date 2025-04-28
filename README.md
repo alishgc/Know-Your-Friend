@@ -43,7 +43,7 @@ Know-Your-Friend/
 ├── app.py            # Main script to run the web app
 ├── static/           # Contains CSS and JS files
 ├── templates/        # Contains HTML templates
-├── database/         # Database scripts (e.g., SQL)
+├── instance/         # Database scripts (e.g., SQL)
 ├── requirements.txt  # Project dependencies
 ├── README.md         # Project documentation
 └── LICENSE           # License file
