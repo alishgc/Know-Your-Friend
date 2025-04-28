@@ -21,24 +21,23 @@
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/alishgc/Know-Your-Friend.git
+   ```
 
-2. Install dependencies (in requirements.txt):
+2. **Install dependencies** (in `requirements.txt`):
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-pip install -r requirements.txt
+3. **Setup the database**:  
+   Ensure your database (e.g., SQLite, MySQL) is properly configured as specified in your app’s code.
 
+4. **Run the app**:
+   ```bash
+   python app.py
+   ```
 
-3. Setup the database:
-Ensure your database (e.g., SQLite, MySQL) is properly configured as specified in your app’s code.
-
-
-4. Run the app:
-
-python app.py
-
-
-
-Project Structure
-
+## Project Structure
+```
 Know-Your-Friend/
 │
 ├── app.py            # Main script to run the web app
@@ -48,28 +47,18 @@ Know-Your-Friend/
 ├── requirements.txt  # Project dependencies
 ├── README.md         # Project documentation
 └── LICENSE           # License file
+```
 
-Requirements
+## Requirements
+- Python 3.x
+- Database (e.g., SQLite, MySQL)
+- Required Python libraries (listed in `requirements.txt`)
 
-Python 3.x
+## License
 
-Database (e.g., SQLite, MySQL)
+This project is licensed under the [MIT License](LICENSE).
 
-Required Python libraries (listed in requirements.txt)
-
-
-License
-
-This project is licensed under the MIT License.
-
-Future Improvements
-
-Add a feature to challenge multiple friends simultaneously
-
-Improve UI/UX with a modern front-end framework
-
-Implement personalized feedback based on quiz results
-
-
-Just copy and paste this into your `README.md` file, and it will display correctly on GitHub! Let me know if you need any further adjustments.
-
+## Future Improvements
+- Add a feature to challenge multiple friends simultaneously
+- Improve UI/UX with a modern front-end framework
+- Implement personalized feedback based on quiz results
