@@ -1,38 +1,26 @@
-Know Your Friend
+# Know Your Friend
 
- 
+[![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-Know Your Friend is a web-based application that lets users test how well they know their friends. It uses a database to store quiz questions and answers, offering an interactive experience. The app is built using Python for the backend and HTML/CSS for the frontend.
+**Know Your Friend** is a web-based application that lets users test how well they know their friends. It uses a database to store quiz questions and answers, offering an interactive experience. The app is built using Python for the backend and HTML/CSS for the frontend.
 
-Features
+## Features
+- **Web-based interface** for user-friendly interaction
+- **Database** to store quiz questions and responses
+- Dynamic scoring system to evaluate how well you know your friend
+- Expandable with more questions, friends, and features
 
-Web-based interface for user-friendly interaction
-
-Database to store quiz questions and responses
-
-Dynamic scoring system to evaluate how well you know your friend
-
-Expandable with more questions, friends, and features
-
-
-How It Works
-
+## How It Works
 1. The app retrieves quiz questions from a database.
-
-
 2. You answer multiple-choice questions.
-
-
 3. After completion, the app calculates your score and provides feedback.
 
+## Installation
 
-
-Installation
-
-1. Clone the repository:
-
-git clone https://github.com/alishgc/Know-Your-Friend.git
-
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/alishgc/Know-Your-Friend.git
 
 2. Install dependencies (in requirements.txt):
 
@@ -80,4 +68,8 @@ Add a feature to challenge multiple friends simultaneously
 
 Improve UI/UX with a modern front-end framework
 
-Implement personalized feedback based on quiz results# Know-Your-Friend
+Implement personalized feedback based on quiz results
+
+
+Just copy and paste this into your `README.md` file, and it will display correctly on GitHub! Let me know if you need any further adjustments.
+
